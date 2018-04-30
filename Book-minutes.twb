@@ -1,0 +1,497 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.17.1226.1925                               -->
+<workbook original-version='10.5' source-build='10.5.0 (10500.17.1226.1925)' source-platform='win' version='10.5' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (Metrics_0)' inline='true' name='federated.0or7n3i1jz49bh0zywckw0ikck4m' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Metrics_0' name='excel-direct.0zpj4av19rhj9i14kegge0x4lsgi'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Nicholas Lourme/Downloads/Metrics_0.xlsm' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0zpj4av19rhj9i14kegge0x4lsgi' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:G22:no:A1:G22:0' header='yes' outcome='6'>
+            <column datatype='string' name='City' ordinal='0' />
+            <column datatype='integer' name='Trips' ordinal='1' />
+            <column datatype='integer' name='Miles' ordinal='2' />
+            <column datatype='integer' name='Peeps' ordinal='3' />
+            <column datatype='real' name='Trips/ Person' ordinal='4' />
+            <column datatype='real' name='Miles/Person' ordinal='5' />
+            <column datatype='real' name='Minutes/ Commute' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trips</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Trips]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Trips</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Miles</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Miles]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Miles</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Peeps</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Peeps]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Peeps</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trips/ Person</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Trips/ Person]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Trips/ Person</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Miles/Person</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Miles/Person]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Miles/Person</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Minutes/ Commute</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Minutes/ Commute]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Minutes/ Commute</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G22:no:A1:G22:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.409326' measure-ordering='alphabetic' measure-percentage='0.590674' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:City:nk]' type='palette'>
+            <map to='#bab0ac'>
+              <bucket>&quot;Baltimore&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Boston&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Chicago&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Dallas&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Denver&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Houston&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Las Vegas&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Los Angeles&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Miami&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Minneapolis&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;New York&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Oakland&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Philadelphia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Phoenix&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Pittsburgh&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Portland&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;San Diego&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;San Francisco&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Seattle&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Washington&quot;</bucket>
+            </map>
+            <map to='#eb3227'>
+              <bucket>&quot;Atlanta&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Book'>Average minutes to destination on Mass Transit</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (Metrics_0)' name='federated.0or7n3i1jz49bh0zywckw0ikck4m' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0or7n3i1jz49bh0zywckw0ikck4m'>
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='real' name='[Minutes/ Commute]' role='measure' type='quantitative' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Minutes/ Commute]' derivation='None' name='[none:Minutes/ Commute:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Minutes/ Commute]' derivation='Sum' name='[sum:Minutes/ Commute:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0or7n3i1jz49bh0zywckw0ikck4m].[none:City:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:City:nk]' member='&quot;Atlanta&quot;' />
+              <groupfilter function='member' level='[none:City:nk]' member='&quot;Boston&quot;' />
+              <groupfilter function='member' level='[none:City:nk]' member='&quot;Chicago&quot;' />
+              <groupfilter function='member' level='[none:City:nk]' member='&quot;Denver&quot;' />
+              <groupfilter function='member' level='[none:City:nk]' member='&quot;Houston&quot;' />
+              <groupfilter function='member' level='[none:City:nk]' member='&quot;Los Angeles&quot;' />
+              <groupfilter function='member' level='[none:City:nk]' member='&quot;New York&quot;' />
+              <groupfilter function='member' level='[none:City:nk]' member='&quot;Philadelphia&quot;' />
+              <groupfilter function='member' level='[none:City:nk]' member='&quot;San Francisco&quot;' />
+              <groupfilter function='member' level='[none:City:nk]' member='&quot;Washington&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='computed' column='[federated.0or7n3i1jz49bh0zywckw0ikck4m].[none:City:nk]' direction='DESC' using='[federated.0or7n3i1jz49bh0zywckw0ikck4m].[sum:Minutes/ Commute:qk]' />
+          <filter class='quantitative' column='[federated.0or7n3i1jz49bh0zywckw0ikck4m].[none:Minutes/ Commute:qk]' included-values='in-range'>
+            <min>24.399999999999999</min>
+            <max>35.899999999999999</max>
+          </filter>
+          <slices>
+            <column>[federated.0or7n3i1jz49bh0zywckw0ikck4m].[none:Minutes/ Commute:qk]</column>
+            <column>[federated.0or7n3i1jz49bh0zywckw0ikck4m].[none:City:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0or7n3i1jz49bh0zywckw0ikck4m].[sum:Minutes/ Commute:qk]' field-type='quantitative' max='37.447819672131146' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.0or7n3i1jz49bh0zywckw0ikck4m].[sum:Minutes/ Commute:qk]' scope='rows' value='' />
+            <format attr='subtitle' class='0' field='[federated.0or7n3i1jz49bh0zywckw0ikck4m].[sum:Minutes/ Commute:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.0or7n3i1jz49bh0zywckw0ikck4m].[sum:Minutes/ Commute:qk]' scope='rows' value='true' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' scope='rows' value='bold' />
+            <format attr='color' scope='rows' value='#000000' />
+            <format attr='font-size' scope='rows' value='10' />
+            <format attr='color' scope='cols' value='#000000' />
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='font-size' scope='cols' value='10' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0or7n3i1jz49bh0zywckw0ikck4m].[none:City:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d5dce4' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0or7n3i1jz49bh0zywckw0ikck4m].[sum:Minutes/ Commute:qk]</rows>
+        <cols>[federated.0or7n3i1jz49bh0zywckw0ikck4m].[none:City:nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='199'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0or7n3i1jz49bh0zywckw0ikck4m].[none:City:nk]' type='color' />
+            <card param='[federated.0or7n3i1jz49bh0zywckw0ikck4m].[none:City:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0or7n3i1jz49bh0zywckw0ikck4m].[:Measure Names]</field>
+            <field>[federated.0or7n3i1jz49bh0zywckw0ikck4m].[none:City:nk]</field>
+            <field>[federated.0or7n3i1jz49bh0zywckw0ikck4m].[none:Minutes/ Commute:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      th+XdAQAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
